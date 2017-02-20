@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: setup.css
 * @Last modified by:   DevelDoe
-* @Last modified time: 2017-02-20T22:03:17+01:00
+* @Last modified time: 2017-02-20T22:53:44+01:00
 */
 
 
@@ -69,11 +69,12 @@ html,body{
     background: black !important;
 	color: #bceaff;
 	text-shadow: rgba(0, 151, 199,0.9) 0px 0px 8px;
-    font: 12px monospace;
+    font: 14px monospace;
     -webkit-font-smoothing: antialiased;
 	overflow: hidden;
 	font-family: 'Inconsolata', monospace;
-    line-height: 1.5em;
+    line-height: 1.3em;
+	font-weight: 200 !important;
 }
 #app{
     width: 100%;
