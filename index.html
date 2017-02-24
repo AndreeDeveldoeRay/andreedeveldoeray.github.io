@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: index.html
 @Last modified by:   andreeray
-@Last modified time: 2017-02-24T18:04:18+01:00
+@Last modified time: 2017-02-24T18:10:33+01:00
 -->
 
 <!DOCTYPE html>
@@ -41,8 +41,7 @@
     <div id="bg">
         <div id=video_bg>
             <video id="video" muted loop>
-                <source src="video/sd_na.mp4" type="video/mp4">
-                <source src="video/sd_na.ogg" type="video/ogg">
+
             </video>
             <div class="gradientback"></div>
         </div>
@@ -54,6 +53,7 @@
 
     <script src=bundle.js></script>
     <script>
-    var video = document.getElementById("video")
-    video.play()
+        var video = document.getElementById("video")
+        video.src = "http://andreeray.se/video/sd_na.mp4"
+        video.addEventListener('canplaythrough', function(e) { video.play() }, false)
     </script>
