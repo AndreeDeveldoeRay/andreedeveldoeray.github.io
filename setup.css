@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: setup.css
 * @Last modified by:   andreeray
-* @Last modified time: 2017-02-24T23:56:11+01:00
+* @Last modified time: 2017-02-25T00:14:45+01:00
 */
 
 
@@ -78,6 +78,7 @@ html,body{
 }
 #app{
     width: 100%;
+    height: 100%;
 	background: rgba(8, 34, 45, 0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
 	position: absolute;
 	top:0;
