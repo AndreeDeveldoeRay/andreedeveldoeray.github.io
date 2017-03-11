@@ -3,8 +3,8 @@
 * @Date:   2017-02-19T00:40:36+01:00
 * @Email:  me@andreeray.se
 * @Filename: setup.css
-* @Last modified by:   andreeray
-* @Last modified time: 2017-02-25T00:14:45+01:00
+* @Last modified by:   develdoe
+* @Last modified time: 2017-03-11T14:01:43+01:00
 */
 
 
@@ -72,14 +72,13 @@ html,body{
     font: 14px monospace;
     -webkit-font-smoothing: antialiased;
 	overflow: hidden;
-	font-family: 'Inconsolata', monospace;
+	font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     line-height: 1.3em;
 	font-weight: 200 !important;
 }
 #app{
     width: 100%;
     height: 100%;
-	background: rgba(8, 34, 45, 0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
 	position: absolute;
 	top:0;
 	left:0;
