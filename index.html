@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: index.html
 @Last modified by:   develdoe
-@Last modified time: 2017-03-11T20:33:16+01:00
+@Last modified time: 2017-03-11T21:23:55+01:00
 -->
 
 <!DOCTYPE html>
@@ -27,9 +27,6 @@
      }
      body {
          background: rgba(8, 34, 45, 1) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
-     }
-     #terminal{
-         opacity: 1;
      }
      #output, #input{
          box-sizing: border-box;
@@ -62,7 +59,24 @@
          height: 31%;
          padding: 10% 20%;
      }
+     .blink {
+         animation-duration: .2s;
+         animation-name: blink;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+         animation-timing-function: ease-in-out;
+     }
+     @keyframes blink {
+         from {
+             opacity: 1;
+         }
+         to {
+             opacity: 0;
+         }
+     }
      </style>
+
+     <link rel="stylesheet" href="/terminal.css">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -86,5 +100,19 @@
 
 <body>
 
-    <div id=terminal></div>
+    <div id=terminal>
+        <div id="terminal">
+            <div id="screen" >
+                <div id="output" >
+                    <div id="parent">
+                        <div id="child">
+                            downloading <span class="blink">data</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
     <script src=bundle.js></script>
