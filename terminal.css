@@ -4,10 +4,15 @@
 * @Email:  me@andreeray.se
 * @Filename: terminal.css
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-11T21:23:11+01:00
+* @Last modified time: 2017-03-12T15:39:29+01:00
 */
 
-
+#status{
+    position: fixed;
+    top:10px;
+    left:10px;
+    font-size: 12px;
+}
 
 #terminal{
     z-index: 1;
@@ -73,6 +78,15 @@ input {
     text-shadow: rgba(0, 151, 199,0.9) 0px 0px 8px;
 }
 
+#status ul {
+    margin: 0;
+    position: relative;
+}
+.status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .blink {
     animation-duration: .2s;
     animation-name: blink;
